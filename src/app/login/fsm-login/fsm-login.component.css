@@ -1,0 +1,67 @@
+.login
+    width: 100%
+    height: 100vh
+    position: relative
+    .bg
+        width: 100%
+        height: 100vh
+        background-image: url('../../assets/images/bg-principal.jpg')
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: fixed
+        z-index: 1
+    .caja
+        width: 100%
+        max-width: 610px
+        margin: 0 auto 0 0
+        height: 100vh
+        background-color: #ffffff
+        display: table
+        position: relative
+        z-index: 5
+        .celda
+            display: table-cell
+            vertical-align: middle
+            text-align: center
+            .formulario
+                padding: 2rem 1rem
+                display: inline-block
+                max-width: 330px
+                width: 100%
+                text-align: left
+                color: #9c9c9c
+                figure
+                    margin: 0 auto 2rem auto
+                    width: 210px
+                    img
+                        width: 100%
+                        height: auto
+                        display: block
+                .recordar
+                    font-size: 14px
+                    font-weight: 300
+                    display: inline-block
+                    line-height: 1
+                    cursor: pointer
+                    user-select: none
+                    i
+                        color: #001e7e
+                .olvido
+                    font-size: 18px
+                    line-height: 1
+                    font-weight: 300
+                    display: inline-block
+                    margin: 5rem 0 0 0
+                    color: #001e7e
+                    cursor: pointer
+                    user-select: none
+                .volverSolicitar
+                    font-size: 18px
+                    line-height: 1
+                    font-weight: 300
+                    display: inline-block
+                    margin: 2rem 0 0 0
+                    color: #001e7e
+                    cursor: pointer
+                    user-select: none

@@ -1,0 +1,62 @@
+<div class="login">
+    <div class="bg"></div>
+    <div class="caja">
+        <div class="celda">
+            <div class="formulario">
+                <figure>
+                    <img src="./assets/images/logo.png" alt="">
+                </figure>
+                <form class="animation" [formGroup]="form" (ngSubmit)="submit()">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input
+                                type="email"
+                                formControlName="correo"
+                                class="form-control"
+                                placeholder="Email"
+                                (ngModel) = "email"
+                                >
+                            <span class="input-group-text">
+                                <i class="iconinnod-mail2"></i>
+                            </span>
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input
+                                    type="password"
+                                    formControlName="password"
+                                    class="form-control"
+                                    placeholder="Contraseña"
+                                >
+                                <span class="input-group-text">
+                                    <i class="iconinnod-mail2"></i>
+                                </span>
+                            </div>
+                        </div>
+                    <div>
+                        <div class="recordar">
+                            <i class="iconinnod-check-box-empty" *ngIf="!recordar"></i>
+                            <i class="iconinnod-check-box" *ngIf="recordar"></i>
+                            Recordarme
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-6"></div>
+                        <div class="col-6 text-end ">
+                            <button class="btn btn-block btnAzul mr-0 mb-0" type="submit">
+                                Siguiente
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="text-center">
+                    <div class="olvido">
+                        ¿Olvidó su contraseña?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
